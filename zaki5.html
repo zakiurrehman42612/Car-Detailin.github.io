@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Ceviche+One&family=Fruktur&family=Roboto+Slab:wght@100&display=swap"
+    rel="stylesheet">
+<style>
+    .container::before {
+        content: "";
+        position: absolute;
+        background: #e110108c;
+        opacity: 0.4;
+        z-index: -1;
+        height: 90px;
+        width: 1340px;
+    }
+
+    @media(max-width: 700px) {
+        .container::before {
+            flex-direction: column;
+        }
+    }
+
+    .container img {
+        height: 83px;
+        width: 82px;
+        border-radius: 66px;
+    }
+
+    @media(max-width: 700px) {
+        .mid {
+            flex-direction: column;
+        }
+    }
+
+
+    .mid ul li a {
+        text-decoration: none;
+        flex-direction: row;
+    }
+
+
+    .mid ul li {
+        font-family: 'Abril Fatface', cursive;
+        top: -60px;
+        left: 420px;
+        display: inline;
+        position: relative;
+        margin: auto;
+        padding: 10px;
+
+
+    }
+
+
+    @media(max-width: 700px) {
+        .mid ul li a {
+            flex-direction: column;
+        }
+    }
+
+    .mid ul li a:hover {
+        color: rgb(255, 149, 10);
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0);
+
+        font-family: 'Permanent Marker', cursive;
+
+    }
+
+
+    .pic {
+        background: url(img/aa.png);
+        background-size: cover;
+        position: absolute;
+        top: 99px;
+        border: 2 px solid rgb(7, 7, 7);
+        animation: slide 40s infinite;
+        height: 900px;
+        width: 1340px;
+
+        left: 6px;
+    }
+
+    @media(max-width: 700px) {
+        .pic {
+            flex-direction: column;
+        }
+    }
+
+    @keyframes slide {
+        10% {
+            background: url(img/aa.png);
+            background-size: cover;
+        }
+
+        30% {
+            background: url(img/bb.png);
+            background-size: cover;
+        }
+
+        50% {
+            background: url(img/bb.png);
+            background-size: cover;
+        }
+
+        70% {
+            background: url(img/cc.jpg);
+            background-size: cover;
+        }
+
+        90% {
+            background: url(img/dd.jpg);
+            background-size: cover;
+        }
+
+        110% {
+            background: url(img/ee.jpeg);
+            background-size: cover;
+        }
+
+        130% {
+            background: url(img/gg.jpeg);
+            background-size: cover;
+        }
+
+        150% {
+            background: url(img/hh.jpeg);
+            background-size: cover;
+        }
+
+        170% {
+            background: url(img/ii.png);
+            background-size: cover;
+        }
+
+        190% {
+            background: url(img/jj.jpg);
+            background-size: cover;
+        }
+
+        200% {
+            background: url(img/kk.jpg);
+            background-size: cover;
+        }
+    }
+
+    .a {
+        position: absolute;
+        top: 980px;
+        left: 600px;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 30px;
+    }
+
+    @media(max-width: 700px) {
+        .a {
+            flex-direction: column;
+        }
+    }
+
+    .b {
+        position: absolute;
+        top: 1100px;
+        color: white;
+        border: 2px solid red;
+        background-color: rgb(17, 20, 22);
+        height: 300px;
+        width: 800px;
+        left: 250px;
+        font-size: 25px;
+        border-radius: 8px;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+    }
+
+    @media(max-width: 700px) {
+        .b {
+            flex-direction: column;
+        }
+    }
+
+    .c {
+        position: absolute;
+        top: 1400px;
+        left: 600px;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    .d img {
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        border-radius: 70px;
+        height: 200px;
+        width: 200px;
+        transition: 0.7s;
+    }
+
+    .d img:hover {
+        border-radius: 17px;
+        transition: 6s;
+    }
+
+    .e img {
+        position: absolute;
+        top: 60px;
+        left: 550px;
+        border-radius: 70px;
+        height: 200px;
+        width: 200px;
+        transition: 0.7s;
+    }
+
+    .e img:hover {
+        border-radius: 17px;
+        transition: 6s;
+    }
+
+    .f {
+        position: absolute;
+        top: 240px;
+        left: 110px;
+        color: rgb(133, 245, 129);
+    }
+
+    .g {
+        position: absolute;
+        top: 250px;
+        left: 550px;
+        color: rgb(133, 245, 129);
+    }
+
+    .zaki {
+        background-color: rgb(0, 0, 0);
+        height: 800px;
+        width: 1340px;
+        left: 6px;
+        top: 1500px;
+        position: absolute
+    }
+
+    .h img {
+        position: absolute;
+        top: 60px;
+        left: 970px;
+        border-radius: 70px;
+        height: 200px;
+        width: 200px;
+        transition: 0.7s;
+    }
+
+    .h img:hover {
+        border-radius: 17px;
+        transition: 6s;
+    }
+
+    .J {
+        position: absolute;
+        top: 250px;
+        left: 1000px;
+        color: rgb(133, 245, 129);
+    }
+
+    .k img {
+        position: absolute;
+        top: 400px;
+        left: 100px;
+        border-radius: 70px;
+        height: 200px;
+        width: 200px;
+        transition: 0.7s;
+    }
+
+    .k img:hover {
+        border-radius: 17px;
+        transition: 6s;
+    }
+
+    .l {
+        position: absolute;
+        top: 600px;
+        left: 110px;
+        color: rgb(133, 245, 129);
+    }
+
+    .m img {
+        position: absolute;
+        top: 400px;
+        left: 550px;
+        border-radius: 70px;
+        height: 200px;
+        width: 200px;
+        transition: 0.7s;
+    }
+
+    .m img:hover {
+        border-radius: 17px;
+        transition: 6s;
+    }
+
+    .n {
+        position: absolute;
+        top: 600px;
+        left: 550px;
+        color: rgb(133, 245, 129);
+    }
+
+    .o img {
+        position: absolute;
+        top: 410px;
+        left: 980px;
+        border-radius: 70px;
+        height: 200px;
+        width: 200px;
+        transition: 0.7s;
+    }
+
+    .o img:hover {
+        border-radius: 17px;
+        transition: 6s;
+    }
+
+    .p {
+        position: absolute;
+        top: 610px;
+        left: 920px;
+        color: rgb(133, 245, 129);
+    }
+
+    .bashir {
+        position: absolute;
+        top: 2300px;
+        left: 600px;
+    }
+
+    .s {
+        display: inline-block;
+    }
+
+    .s::before {
+        content: "";
+        opacity: 0.4;
+        z-index: -4;
+        position: absolute;
+        border: 3px solid red;
+        top: 2400px;
+        height: 1000px;
+        width: 1330px;
+        background: #cc00ff5c;
+        display: inline-block;
+    }
+
+    .t {
+        position: absolute;
+        top: 2500px;
+        height: 900px;
+        width: 200px;
+        left: 87px;
+        border: 2px solid red;
+        font-family: 'Merriweather', serif;
+        color: rgb(63, 54, 1);
+        font-size: 25px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .u {
+        position: relative;
+        margin: auto;
+        top: 2230px;
+        color: rgb(13, 231, 5);
+        font-family: 'Anton', sans-serif;
+        font-size: 20px;
+        left: 40px;
+        flex-direction: row;
+    }
+
+    .v {
+        position: relative;
+        margin: auto;
+        top: 2114px;
+        color: rgb(65, 82, 3);
+        font-family: 'Anton', sans-serif;
+        font-size: 20px;
+        left: 500px;
+        flex-direction: row;
+
+    }
+
+    .w {
+        position: absolute;
+        top: 2500px;
+        height: 900px;
+        width: 200px;
+        left: 578px;
+        border: 2px solid red;
+        font-family: 'Merriweather', serif;
+        color: rgb(63, 54, 1);
+        font-size: 25px;
+        text-align: center;
+    }
+    .cer{
+        position: absolute;
+        top: 2500px;
+        height: 900px;
+        width: 200px;
+        left: 978px;
+        border: 2px solid red;
+        font-family: 'Merriweather', serif;
+        color: rgb(63, 54, 1);
+        font-size: 25px;
+        text-align: center;
+    }
+    .con{
+        position: absolute;
+        top: 3450px;
+        left: 500px;
+        height: 50px;
+        width: 700px;
+        font-size: 40px;
+
+    }
+    .in{
+        height: 200px;
+        width: 1330px;
+        background-color: yellowgreen;
+        top: 3500px;
+        left: 2px;
+        position: absolute;
+        
+    }
+    .in a{
+        text-decoration: none;
+        font-size: 20px;
+
+    }
+    .in a:hover{
+        background-color: tomato;
+        border: 1px solid bisque;
+    }
+    .pro{
+        position: relative;
+        margin: auto;
+        top: 2045px;
+        
+        color: rgb(146, 11, 224);
+        font-family: 'Anton', sans-serif;
+        font-size: 20px;
+        left: 970px;
+        flex-direction: row;
+    }
+    #a{
+        position: absolute;
+        left: 500px;
+        top: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        
+    }
+    #a:hover{
+        background-color: tomato;
+        border-radius: 20px;
+    }
+    #b{
+        position: absolute;
+        left: 1100px;
+        top: 50px;
+        font-size: 20px;
+        border-radius: 10px;   
+    }
+    #b:hover{
+        background-color: rgb(233, 2, 110);
+        border-radius: 20px;
+    }
+    #c{
+        position: absolute;
+        left: 800px;
+        top: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    #c:hover{
+        background-color: rgb(7, 79, 128);
+        border-radius: 20px;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <img src="img/oo.png" alt="">
+        <div class="mid">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#packages">PACKAGES</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="pic"></div>
+    <div class="a" id="about">
+        <h1>About</h1>
+    </div>
+    <div class="b">
+        Wash junction are pioneer in giving car detailing service in Lahore at your door step. We commit to give high
+        quality services to our customers. We are a <br> team of professional who will give a new look to your ride as
+        we
+        believe cleanliness reflect your personality.
+        Our professional <strong> cleaners dedicated not simply cleaning your car but restoring your vehicles
+            original</strong>
+        appearance, we offer services starting with the basic hand wash all the way to interior and exterior finish
+        restoration.
+    </div>
+    <div class="c" id="services">
+        <h1>SERVICES</h1>
+    </div>
+    <div class="zaki">
+
+        <div class="d">
+            <img src="img/engine wash.jpg" alt="">
+        </div>
+        <div class="f">
+            <h2>ENGINE WASH</h2>
+        </div>
+        <div class="e">
+            <img src="img/compound.jpg" alt="">
+        </div>
+        <div class="g">
+            <h2>COMPOUND WAX</h2>
+        </div>
+        <div class="h">
+            <img src="img/wash.jpg" alt="">
+        </div>
+        <div class="J">
+            <h2>CAR WASH</h2>
+        </div>
+        <div class="k">
+            <img src="img/tire shine.jpg" alt="">
+        </div>
+        <div class="l">
+            <h2>TIRE SHINE</h2>
+        </div>
+        <div class="m">
+            <img src="img/daaaa.jpg" alt="">
+        </div>
+        <div class="n">
+            <h2>CAR DETAILINS</h2>
+        </div>
+        <div class="o">
+            <img src="img/carrrr.jpg" alt="">
+        </div>
+        <div class="p">
+            <h2>CARPET AND SOFA CLEANING</h2>
+        </div>
+    </div>
+    <div class="bashir" id="packages">
+        <h1>PACKAGES </h1>
+    </div>
+    <div class="s">
+        <div class="u">
+            <h2>    HASHBACK/SEDEN</h2>
+        </div>
+        <div class="t">
+          <strong>  RS:2999/- 24 hr </strong> <br> <br> Interior Cleaning <br> <br>Catpet Cleaning <br> <br> Seat Cleaning <br><br>
+            Dashboard Cleaning <br> <br> Exterior Shampoo wash <br> <br>Roof Cleaning <br> <br> Engine Cleaning Dressing
+            <br><br>Front and back light Buffing<br> <br> Trunk Cleaning <br> <br>Compound Polish <br><br> Wax <br><br>
+            Colour Enhance <br><br> Tire Cleaning and Dressing
+        </div>
+        <div class="v">
+            <h2> <br> GENERAL SERVICE:SUV</h2>
+        </div>
+        <div class="w">
+           <strong> RS:2999/- 24 hr </strong> <br> <br> Interior Cleaning <br> <br>Catpet Cleaning <br> <br> Seat Cleaning <br><br>
+            Dashboard Cleaning <br> <br> Exterior Shampoo wash <br> <br>Roof Cleaning <br> <br> Engine Cleaning Dressing
+            <br><br>Front and back light Buffing<br> <br> Trunk Cleaning <br> <br>Compound Polish <br><br> Wax <br><br>
+            Colour Enhance <br><br> Tire Cleaning and Dressing
+        </div>
+        <div class="pro">
+            <h2>CERAMIC PRO</h2>
+        </div>
+        <div class="cer">
+          <strong>  RS:11999/-hr </strong> <br><br> EXTERIOR SHAMPOO WASH <br>  INTERIOR CLEANING<br> <br> ENGINE WASH <br> <br>DASHBOARD WIPE <br> <br> CONSOLE WIPE <br> COMPOUND POLISH  <br>WAX <br> <br>FRONT AND BACK LIGHT BUFFING <br> COLOUR ENHANCE <br> <br>CERAMIC COATING<br> <br> HEADLIGHT COATING  <br>TRUNK CLEANING<br>  <strong>2YEAR WARRANTY</strong>
+        </div>
+        
+        <div class="con" id="contact">
+            CONTACT US
+        </div>
+        <div class="in">
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <H2>  &nbsp; &nbsp; &nbsp; &nbsp; <button> <a href="tel:+92313 4958677">Call Now</a></H2> <br></button>
+                      <button id="a"><a href="https://bit.ly/342zIYR">Go to whatsapp</a></button>
+                      <button id="b"><a href="https://web.facebook.com/Chemic-Car-Detailing-Services-103371128628206/?_rdc=1&_rdr">Go to facebook</a></button>
+                      
+
+        </div>
+    
+</body>
+
+</html>
